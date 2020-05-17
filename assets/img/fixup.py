@@ -32,11 +32,22 @@ def main():
     # filled_image = fill(image, 0)
     # filled_image.show()
 
-    #me 
-    image = SimpleImage('laryn.jpg')
-    trimmed_img = crop_vert(image, 100)
-    cropped_img = trim_crop_image(trimmed_img, 75)
-    cropped_img.show()
+    ###me 
+    # image = SimpleImage('laryn.jpg')
+    # trimmed_img = crop_vert(image, 100)
+    # cropped_img = trim_crop_image(trimmed_img, 75)
+    # cropped_img.show()
+
+    ### cs61a
+    image = SimpleImage('about/cs61a4.jpg')
+    image.show()
+    trimmed_img = crop_horiz(image, 20)
+    trimmed_img.show()
+    # bordered_img = add_border(image, 30)
+    # bordered_img.show()
+    # recolored_img = recolor(bordered_img, 255)
+    # recolored_img.show()
+    
 
 
 def add_border(original_img, border_size):
@@ -62,15 +73,15 @@ def add_border(original_img, border_size):
             if is_border(x, y, border_size, result_image):
                 
                 pixel = result_image.get_pixel(x, y)
-                # pixel.red = 0
-                # pixel.green = 0
-                # pixel.blue = 0
+                pixel.red = 0
+                pixel.green = 0
+                pixel.blue = 0
                 # pixel.red = BORDER_RED
                 # pixel.green = BORDER_GREEN
                 # pixel.blue = BORDER_BlUE
-                pixel.red = 255
-                pixel.green = 255
-                pixel.blue = 255
+                # pixel.red = 255
+                # pixel.green = 255
+                # pixel.blue = 255
             else:
                 orig_x = x - border_size
                 orig_y = y - border_size
@@ -149,6 +160,34 @@ def crop_vert(img, trim_size):
     
     return result
 
+def crop_horiz(img, trim_size):
+    new_width = img.width - (2 * trim_size)
+    result = SimpleImage.blank(new_width, img.height)
 
+    for x in range(new_width):
+        for y in range(img.height):
+            old_x = x + trim_size
+            old_pixel = img.get_pixel(old_x, y)
+            result.set_pixel(x, y, old_pixel)
+    
+    return result
+
+def recolor(img, color):
+    result = SimpleImage.blank(img.width, img.height)
+    for x in range(img.width):
+        for y in range(img.height):
+            old_pixel = img.get_pixel(x, y)
+            if old_pixel.red == 0 and old_pixel.green == 0 and old_pixel.blue == 0:
+                new_pixel = result.get_pixel(x, y)
+                new_pixel.red = color;
+                new_pixel.green = color;
+                new_pixel.blue = color;
+            else:
+                new_pixel.red = old_pixel.red
+                new_pixel.green = old_pixel.green
+                new_pixel.blue = old_pixel.blue
+            # print(old_pixel.red, old_pixel.green, old_pixel.blue)
+
+    return result
 if __name__ == '__main__':
     main()
