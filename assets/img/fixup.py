@@ -25,12 +25,18 @@ def main():
     ### VR
 
     ### CSM
-    image = SimpleImage('about/csm.png')
-    trimmed_img = trim_crop_image(image, 15)
-    trimmed_img.show()
+    # image = SimpleImage('about/csm.png')
+    # trimmed_img = trim_crop_image(image, 15)
+    # trimmed_img.show()
     # add_border(image, 20)
     # filled_image = fill(image, 0)
     # filled_image.show()
+
+    #me 
+    image = SimpleImage('laryn.jpg')
+    trimmed_img = crop_vert(image, 100)
+    cropped_img = trim_crop_image(trimmed_img, 75)
+    cropped_img.show()
 
 
 def add_border(original_img, border_size):
@@ -131,6 +137,17 @@ def trim_crop_image(original_img, trim_size):
 
     return result_image
 
+def crop_vert(img, trim_size):
+    new_height = img.height - (2 * trim_size)
+    result = SimpleImage.blank(img.width, new_height)
+
+    for x in range(img.width):
+        for y in range(new_height):
+            old_y = y + trim_size
+            old_pixel = img.get_pixel(x, old_y)
+            result.set_pixel(x, y, old_pixel)
+    
+    return result
 
 
 if __name__ == '__main__':
