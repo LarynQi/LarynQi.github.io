@@ -10702,36 +10702,42 @@ a {
 
 .announcement .header {
     /* position: inherit; */
-    position: absolute;
-    left: 45%;
+    position: relative;
+    /* left: 45%; */
     color: black;
 }
 
 * .announcement .text-muted {
-    position: relative;
     font-weight: bold;
-    left: 45%;
 }
 .announcement {
-    color: white;
+    position: relative;
+    align-items: center;
+    text-align: center;
     /* position: relative; */
-    left: 25%;
-    text-align: left;
+    /* left: 25%;
+    text-align: left; */
 }
 
 /* https://stackoverflow.com/questions/7516005/how-to-make-a-bullet-list-align-with-text-in-css */
 .announcement ul {
-    position: relative;
-    font-weight: normal;
     padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 45rem;
+    /* padding-left: 10rem; */
+    /* padding-top: 1rem;
     padding-left: 0;
-    padding-right: 25rem;
+    padding-right: 25rem; */
     /* left: 70%; */
     /* padding-right: 30rem; */
 }
 
 .announcement ul .text-muted {
     font-weight: normal;
+    /* padding-top: 1rem; */
+    /* padding-left: 20rem; */
+    /* text-align: center; */
     /* position: relative;
     
     padding-left: 0;
