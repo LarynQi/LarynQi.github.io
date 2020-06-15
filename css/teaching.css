@@ -10746,3 +10746,7 @@ a {
     padding-right: 70rem;
     list-style-position: inside; */
 }
+
+.announcement ul li ul {
+  padding-left: 2.5rem;
+}
