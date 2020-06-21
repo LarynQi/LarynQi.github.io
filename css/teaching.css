@@ -1308,23 +1308,26 @@ pre code {
   .col-lg-1 {
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
+    color: #343a40;
   }
 
   .col-lg-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
     /* color: #6c757d; */
+    color: #343a40;
   }
 
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%;
+    color: #343a40;
   }
 
   .col-lg-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
-    /* color: #6c757d; */
+    color: #343a40;
   }
 
   .col-lg-5 {
@@ -9831,7 +9834,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #343a40 !important;
 }
 
 .text-black-50 {
@@ -10745,6 +10748,10 @@ a {
     padding-left: 0;
     padding-right: 70rem;
     list-style-position: inside; */
+}
+
+.announcement ul li ul {
+  padding-left: 2.5rem;
 }
 
 .announcement ul li ul {
