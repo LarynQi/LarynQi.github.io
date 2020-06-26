@@ -6278,6 +6278,11 @@ button.bg-dark:focus {
   border-radius: 50% !important;
 }
 
+.timeline a[href*="#timelineModal"] .timeline-image .rounded-circle:hover{
+  /* opacity: 0.5; */
+  filter: brightness(125%);
+}
+
 .rounded-pill {
   border-radius: 50rem !important;
 }
