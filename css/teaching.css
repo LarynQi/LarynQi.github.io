@@ -10734,6 +10734,7 @@ a {
     /* padding-left: 32.5rem; */
     padding-bottom: 0rem;
     padding-left: 30.5vw;
+    margin-right: 11vw
     /* viewport based units https://stackoverflow.com/questions/25610638/changing-css-padding-left-based-on-screen-resolution */
 
     /* margin-left: 32.5rem; */

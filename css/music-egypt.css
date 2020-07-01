@@ -10680,6 +10680,13 @@ a {
 .container iframe {
     margin: auto;
     display: block;
+    margin-bottom: 3vw;
+}
+
+.col-lg-4 iframe {
+  margin-left: -9.5vw;
+  position: absolute;
+  z-index: 3;
 }
 
 .modal-body .text-left-liner {
