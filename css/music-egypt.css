@@ -10227,6 +10227,12 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-dialog .modal-content {
   text-align: center;
 }
+.portfolio-modal .modal-dialog .modal-content ul {
+  text-align: left;
+}
+.portfolio-modal .modal-dialog .modal-content .list-inline {
+  text-align: center;
+}
 
 .portfolio-modal {
   justify-content: center;
