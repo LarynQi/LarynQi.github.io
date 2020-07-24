@@ -10777,3 +10777,13 @@ a {
   /* padding-bottom: 0rem; */
   margin-bottom: 0.5rem;
 }
+
+.page-section .container .text-right {
+  position: absolute;
+  right: 10vw;
+  top: 37.5vw;
+}
+img.lambda:hover{
+  /* opacity: 0.5; */
+  filter: brightness(125%);
+}
