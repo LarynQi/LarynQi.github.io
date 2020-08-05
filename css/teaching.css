@@ -5820,6 +5820,7 @@ a.close.disabled {
 
 .carousel {
   position: relative;
+  top: -5vw;
 }
 
 .carousel.pointer-event {
@@ -10779,9 +10780,11 @@ a {
 }
 
 .page-section .container .text-right {
-  position: absolute;
+  position: relative;
+  top: -5vw;
   right: 10vw;
-  top: 37.5vw;
+  /* right: 10vw;
+  top: 37.5vw; */
 }
 img.lambda:hover{
   /* opacity: 0.5; */
