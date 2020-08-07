@@ -462,7 +462,8 @@ class Network:
             True 
             >>> cs61a_plus.degrees(’Yulin’, ’Robert’, 1) # More than 1 degree 
             False 
-            >>> cs61a_plus.degrees(’Robert’, ’Robert’, 2) # 0 degrees True 
+            >>> cs61a_plus.degrees(’Robert’, ’Robert’, 2) # 0 degrees
+            True 
             >>> cs61a_plus. degrees(’Albert’, ’Jessica’, 10) # No friends! 
             False 
             """ 
