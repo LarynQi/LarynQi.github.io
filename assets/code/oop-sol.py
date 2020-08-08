@@ -1,29 +1,29 @@
 """
 ---USAGE---
 
-python3 oop.py <name_of_function>
+python3 oop-sol.py <name_of_function>
 
-e.g. python3 oop.py play_round
+e.g. python3 oop-sol.py play_round
 
 for classes/methods:
     
-class:  python3 oop.py Crooked
-method: python3 oop.py IceCream.__init__
+class:  python3 oop-sol.py Crooked
+method: python3 oop-sol.py IceCream.__init__
 
 ---NOTES---
 
 - if you pass all the doctests, you will get no terminal output
     - if you want to see the verbose output (all output shown even if the function is correct), run this:
 
-    python3 oop.py <name_of_function> -v
+    python3 oop-sol.py <name_of_function> -v
 
 - if you want to test all of your functions, run this:
 
-    python3 oop.py all
+    python3 oop-sol.py all
 
 """
 
-### OOP Topical Review ### 
+### OOP Topical Review Solutions ### 
 
 #####################
 ###   Ice Cream   ###
@@ -80,15 +80,10 @@ class IceCream:
         >>> s.freeze()
         >>> s.temperature
         10
-        >>> s.freezing_point = -1000
+        >>> IceCream.freezing_point = -1000
         >>> s.freeze()
         >>> s.temperature
         -1000
-        >>> m = IceCream("mango", 20, 2)
-        >>> m.freezing_point = -1000
-        >>> m.freeze()
-        10
-
         """
         self.temperature = IceCream.freezing_point # (2) Set to freezing point
 
@@ -170,7 +165,7 @@ class Eater:
 
         if self.picky or craving:
          # (6) How do we know we are out of their favorite flavor? Fill in the conditions.
-            if self.favorite not in IceCream.inventory or IceCream.inventory[self.favorite] == []:
+            if self.favorite not in IceCream.inventory or not IceCream.inventory[self.favorite]: # not IceCream.inventory.get(self.favorite, [])
                 print("Oh no! Your favorite flavor is not available!")
                 return
             else:
@@ -186,7 +181,7 @@ class Eater:
         if choices: # Think about what this condition is checking.
             # (9) Recall that a non-picky and non-craving Eater wants the coldest ice cream
             # regardless of flavor. How do you get the coldest ice cream from CHOICES?
-            chosen = ___________________________________________________
+            chosen = min(choices, key=lambda choice: choice.temperature)
             return chosen
 
     def eat(self, craving=False):
@@ -213,8 +208,6 @@ class Eater:
 
 
 # Q1c
-# Don't test this function until you've tried filling out the blanks,
-# since the output will show you the correct answers.
 def wwpd():
     """
     >>> IceCream.inventory = {}
@@ -222,39 +215,39 @@ def wwpd():
     >>> p = IceCream("pistachio", 35, 3, new=False)
     >>> c = IceCream("chocolate", 10, 15)
     >>> c.split(2)
-    __________________________
+    2 individual(s) get(s) 7.5 original scoop(s) each.
 
     >>> rose = Eater("r", 50, "strawberry")
-    __________________________
+    I can eat 50 ice creams!
 
     >>> victor = Eater("v", 1, "pistachio", picky=True)
-    __________________________
+    I can eat 1 ice creams!
 
     >>> rose.eat()
-    __________________________
-    __________________________
+    NOM NOM NOM!
+    Mmm... that was such a good 7.5 scoops of chocolate ice cream!
 
     >>> rose.eat()
-    __________________________
-    __________________________
+    NOM NOM NOM!
+    Mmm... that was such a good 2 scoops of strawberry ice cream!
 
     >>> rose.eat()
-    __________________________
-    __________________________
+    Sorry! You thought this pistachio ice cream was available but it is not.
+    r is sad.
 
     >>> v = IceCream("vanilla", 20, 3)
     >>> victor.eat()
-    __________________________
-    __________________________
+    Oh no! Your favorite flavor is not available!
+    :'(
 
     >>> p2 = IceCream("pistachio", 15, 3)
     >>> p3 = IceCream("pistachio", 10, 1)
     >>> victor.eat()
-    __________________________
-    __________________________
+    NOM NOM NOM!
+    Mmm... that was such a good 1 scoops of pistachio ice cream!
 
     >>> victor.eat()
-    __________________________
+    v is not hungry anymore!
 
     """
     pass
@@ -268,13 +261,47 @@ How about instead of using an instance attribute to keep track of whether an Eat
 create a subclass of the Eater class called PickyEater?
 
 i) Which method(s) would you have to override in the PickyEater class?
-YOUR RESPONSE HERE
+You only have to override choose in the PickyEater class.
 
 ii) Do we need to have the parameter picky in the __init__ method for Eater? What about for PickyEater?
-YOUR RESPONSE HERE
+Depending on how you implement the code, it is possible to eliminate the picky parameter completely.
 
 iii) Try to write the code from scratch below. You can re-write parts of the existing code.
-YOUR RESPONSE HERE
+See below for sample code response.
+
+# Modify __init__ and choose methods in Eater class
+class Eater:
+    def __init__(self, name, appetite, favorite):
+        self.name = name
+        self.appetite = appetite
+        self.favorite = favorite
+        print("I can eat " + str(self.appetite) + " ice creams!")
+
+    def choose(self, craving=False):
+        # An eater is typically happy with the coldest ice cream regardless of flavor, unless they have a craving. If an Eater has a craving then they behave like a PickyEater.
+        if craving:
+            return PickyEater.choose(self, craving)
+        else:
+            choices = []
+            for flavor, ice_creams in IceCream.inventory.items():
+                choices.extend(ice_creams)
+            if choices:
+                chosen = min(choices, key=lambda choice: choice.temperature)
+                return chosen
+
+# Create PickyEater class and override Eater class’s choose method.
+class PickyEater:
+    def choose(self, craving=False):
+        # A picky eater only eats ice creams of their favorite flavor, and wants the coldest ice cream possible.
+
+        if self.favorite not in IceCream.inventory or not IceCream.inventory[self.favorite]:
+            print("Oh no! Your favorite flavor is not available!")
+            return
+        else:
+            choices = IceCream.inventory[self.favorite]
+        if choices:
+            chosen = min(choices, key=lambda choice: choice.temperature)
+            return chosen
 
 """
 
@@ -297,12 +324,12 @@ class Poll:
     s = []
 
     def __init__(self, n):
-        self.name = _________________________
+        self.name = n
         self.votes = {}
-        _________________________
+        Poll.s.append(self)
 
     def vote(self, choice):
-        self._________________________ = _________________________
+        self.votes[choice] = self.votes.get(choice, 0) + 1
 
 def tally(c):
     """Tally all votes for a choice c as a list of (poll name, vote count) pairs.
@@ -319,7 +346,7 @@ def tally(c):
     >>> tally('cat')
     [('A', 1), ('B', 1)]
     """
-    return _________________________
+    return [(p.name, p.votes[c]) for p in Poll.s if c in p.votes]
 
 # Q2b
 """
@@ -339,8 +366,8 @@ class Crooked(Poll):
 
     def vote(self, choice):
         if self.record:
-            _________________________._________________________(_________________________)
-        self._________________________ = _________________________
+            Poll.vote(self, choice)
+        self.record = not self.record
 
 ####################
 ###   Cucumber   ###
@@ -386,16 +413,16 @@ class Round:
         self.starter, self.player, self.highest = starter, starter , -1 
 
     def play(self, who, card):
-        assert _________________________, "The round is over, player " + str(who) 
-        assert _________________________, "It’s not your turn, player " + str(who) 
+        assert not self.complete(), "The round is over, player " + str(who) 
+        assert who == self.player, "It’s not your turn, player " + str(who) 
         self.player = (who + 1) % self.players 
         if card >= self.highest: 
-            _________________________, _________________________ = _________________________, _________________________
-        if _________________________:
+            self.highest, self.control = card, who 
+        if self.complete():
             self.winners.append(self.control) 
 
     def complete(self): 
-        return _________________________
+        return self.player == self.starter and self.highest > -1
 
 ##################
 ###   CS61A+   ###
@@ -430,12 +457,12 @@ class Network:
         self.friends = {} # Maps users to a list of their friends 
 
     def add_friend(self, user1, user2): 
-        if _________________________:
-            _________________________
-        if _________________________:
-            _________________________
-        _________________________
-        _________________________
+        if user1 not in self.friends:
+            self.friends[user1] = []
+        if user2 not in self.friends:
+            self.friends[user2] = []
+        self.friends[user1].append(user2)
+        self.friends[user2].append(user1)
 
         # Q4b
         """
@@ -472,14 +499,14 @@ class Network:
             >>> cs61a_plus. degrees(’Albert’, ’Jessica’, 10) # No friends! 
             False 
             """ 
-            if _________________________: 
-                return _________________________
-            elif _________________________:
-                return _________________________ 
-            for friend in _________________________: 
-                if _________________________: 
+            if user1 == user2: 
+                return True 
+            elif n <= 0:
+                return False 
+            for friend in self.friends[user1]: 
+                if self.degrees(friend, user2, n - 1): 
                     return True 
-            return _________________________
+            return False
 
 
 
