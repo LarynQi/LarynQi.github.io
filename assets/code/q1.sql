@@ -37,7 +37,7 @@ CREATE TABLE players AS
     SELECT "Chase Garbers", "Cal";
 
 CREATE TABLE parta AS
-    SELECT quarter FROM scoring GROUP BY quarter HAVING SUM(points) > 10;
+    SELECT ______________________________;
 
 CREATE TABLE partb AS
-    SELECT team, SUM(points) FROM scoring, players WHERE player=name GROUP BY team;
+    SELECT ______________________________;
