@@ -10779,6 +10779,10 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.announcement .special-message {
+  margin-left: -10vw;
+}
+
 .page-section .container .text-right {
   position: relative;
   top: -5vw;
