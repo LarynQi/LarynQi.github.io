@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Laryn Qi" />
+
+        <meta property="og:title" content="Laryn Qi Teaching"/>
+        <meta property="og:type" content="Website"/>
+        <meta property="og:url" content="https://larynqi.github.io/cs61a/fa20"/>
+        <meta property="og:image" content="https://larynqi.github.io/assets/img/previews/preview_cs61a.png"/>
+        <meta property="og:description" content="Laryn Qi's Teaching"/>
+        
+        <title>CS61A | FA20</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166903806-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-166903806-1');
+        </script>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/lambda.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/teaching.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="/">Home</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#announcements">Announcements</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#slides">Slides</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://calendar.google.com/calendar/selfsched?sstoken=UUJlRHc1WUVROWFQfGRlZmF1bHR8MjE3ZmY3MGY5ZmM3YTNjYjZkM2M0NzliYjIzZjI0MzA" target="_blank">Meetings</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://forms.gle/JPt7fGKNeaNc3Fvy6" target="_blank">Feedback</a></li>
+                        <!-- <li class="dropdown-menu"><div class="dropdown-menu">Contact</div>
+                            <button class="dropdown-menu" href="cs61a.html">More</a>
+                            <div class="dropright">Hello</div>
+                        </li> -->
+                        
+                        <!-- <li class="nav-item"><a class="nav-link" href="cs61a.html">Teaching</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+
+            <div class="container">
+
+                <!-- <div class="masthead-subheading">Engineer, Musician, Educator</div> -->
+                <!-- <div id="particles-js"></div> -->
+                <div class="masthead-heading">CS61A FA20</div>
+                <!-- <p class="text-muted">Lab: TBD</p> -->
+                <p class="text-muted">Tutorials: Wednesday's 3:00 - 4:00 PM, 5:00 - 6:00 PM</p>
+                <p class="text-muted">Office Hours: TBD</p>
+                <p class="text-muted">Contact: <code>larynqi@berkeley.edu</code></p>
+
+                <!-- <div id="particles-js"></div> -->
+                <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="assets/resume.pdf" target="_blank">Resume</a> -->
+            </div>
+            <div id="particles-js"></div>
+        </header>
+        
+         <!-- Announcements -->
+         <section class="page-section" id="announcements">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Announcements</h2>
+                </div>
+                <div class="text-right"><a href="https://cs61a.org/" target="_blank"><img class="lambda" src="assets/img/lambda.ico" alt="lambda"/></a></div>
+            </div>
+            <div class="carousel" id="myCarousel" data-wrap="false">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Monday, June 15</div>
+                            <ul>
+                                <li class="text-muted">Welcome to CS61A!</li>
+                                <li class="text-muted">Make sure you are enrolled in the CS61A SU20 Piazza and fill out the <a href="https://piazza.com/class/kbesvacrkom2of?cid=10" target="_blank">Welcome Survey</a>
+                                    <ul>
+                                        <li class="text-muted">Important class-wide announcements will be posted on Piazza and the <a href="https://cs61a.org/" target="_blank">course website</a></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Section-specific announcements and resources will be posted here</li>
+                                <li class="text-muted">First discussion will be next <s>Monday or Tuesday (6/22, 6/23)</s> Tuesday (6/23)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Sunday, June 21</div>
+                            <ul>
+                                <li class="text-muted">Sign up for <a href="https://www.signupgenius.com/go/904044caaa62aa3fe3-cs61asummer" target="_blank">discussion</a> (attendance counts for points!)</li>
+                                <li class="text-muted">Come to live lecture tomorrow (6/22) from 4:10 PM - 5:30 PM PDT</li>
+                                <li class="text-muted">Lab 00 will be released tomorrow (6/22)
+                                    <ul>
+                                        <li class="text-muted">Although it's <i>officially</i> due on Wednesday, get started on it ASAP since it covers how to setup your computer</li>
+                                        <li class="text-muted">If you come across a problem last minute, it will be hard for course staff to save you</li>
+                                        <li class="text-muted">Otherwise, feel free to contact me or sign up for <a href="https://oh.cs61a.org/" target="_blank">OH</a> if you're having trouble</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">HW 01 will be released Tuesday (6/23) and will involve some coding (yay!!)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Wednesday, June 24</div>
+                            <ul>
+                                <li class="text-muted">Complete the <a href="https://forms.gle/8DGYfjQAisCD7VdM6" target="_blank">survey</a>!
+                                    <ul>
+                                        <li class="text-muted">If you came to live section, fill out the secret phrase; otherwise, just leave it blank</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Sign up for <a href="https://www.signupgenius.com/go/70a0d4aadac23a1f85-cs61asmall" target="_blank">small group tutoring</a>
+                                    <ul>
+                                        <li class="text-muted">Deadline to sign up: <b>Saturday, June 27 at 11:59 PM PDT</b></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted"><a href="https://oh.cs61a.org/appointments" target="_blank">OH appointment</a> slots have begun for the following day will open each night
+                                    <ul>
+                                        <li class="text-muted">Appointments will open each night for the following day</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Add to our <a href="https://open.spotify.com/playlist/2zN1MAMJIkeECX77BtG9Sb?si=ddaBltONRnORRDHmCpjllA" target="_blank">discussion playlist</a>!</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Thursday, June 25</div>
+                            <ul>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/hog/" target="_blank">Hog</a> has been released and is due Monday, July 6 @ 11:59 PM
+                                    <ul>
+                                        <li class="text-muted">Complete the whole project by Sunday, July 5 to earn an early submission bonus point (get started now)!</li>
+                                        <li class="text-muted">Phase 1 (of 3) is due <s>Thursday, July 2</s> Friday, July 3 (individual)</li>
+                                        <li class="text-muted">You can work with a partner on phases 2 & 3, just add them on okpy before the final deadline</li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="text-muted">Diagnostic Quiz is happening next Thursday, July 2 (time TBD, 2 slots 12 hours apart, synchronous)
+                                    <ul>
+                                        <li class="text-muted">Possible topics: Control/Iteration, Environment Diagrams, HOFs, Self reference, Linear Recursion</li>
+                                    </ul>
+                                </li>
+
+                                <li class="text-muted">Course staff is currently working on putting up discussion recording playlists on the main website!
+                                    <ul>
+                                        <li class="text-muted">If you would like to access a recording from our section in the meantime, just shoot me an email</li>
+                                    </ul>
+                                </li>
+
+                                <li class="text-muted">You might've realized that the class is really starting to pick up now...
+                                    <ul>
+                                        <li class="text-muted">If you're feeling anxious, worried that you're falling behind, or just want to chat, feel free to
+                                             schedule a 15 minute check-in <a href=
+                                             "https://calendar.google.com/calendar/selfsched?sstoken=UUJlRHc1WUVROWFQfGRlZmF1bHR8MjE3ZmY3MGY5ZmM3YTNjYjZkM2M0NzliYjIzZjI0MzA" target="_blank">meeting</a></li>
+                                    </ul>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Tuesday, June 30</div>
+                            <ul>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/hog/" target="_blank">Hog</a> Phase 1 is due this Friday, July 3!
+                                    <ul>
+                                        <li class="text-muted">There will be a Hog project party tomorrow (7/1/20) night 3:00 - 6:00 PM (PDT)
+                                            <ul>
+                                                <li class="text-muted">It will be traditional OH style (queue based) with multiple concurrent Zoom calls going on for different problems</li>
+                                                <li class="text-muted">Check Piazza for the project party survey and relevant Zoom links</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="text-muted">Diagnostic Quiz is happening this Thursday, July 2 6:00 PM - 7:15 PM (PDT, synchronous)
+                                    <ul>
+                                        <li class="text-muted">As such, <b>discussion this Thursday is cancelled</b></li>
+                                        <li class="text-muted">Possible topics: Control/Iteration, Environment Diagrams, HOF’s, Self-reference, Linear Recursion</li>
+                                        <li class="text-muted">3 questions, 25 minutes each, no backtracking/going back-and-forth between questions</li>
+                                        <li class="text-muted">If you have a time conflict or need an alternate exam time, fill out <a href="https:links.cs61a.org/alt" target="_blank">links.cs61a.org/alt</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="text-muted">Discussion recordings have been uploaded to YouTube and are available on the main website!
+                                    <ul>
+                                        <li class="text-muted">Under each discussion on the main calendar, there is a small <code>video</code> button that will take you to the corresponding YouTube playlist</li>
+                                    </ul>
+                                </li>
+
+                                <li class="text-muted">My weekly drop-in appointments have changed (hopefully permanently) from M/W/F 1:00 - 2:00 PM to M/W/F 11:00 AM - 12:00 PM (PDT)
+                                    <ul>
+                                        <li class="text-muted">You might've realized that the class is really starting to pick up now...
+                                            <ul>
+                                                <li class="text-muted">If you're feeling anxious, worried that you're falling behind, or just want to chat, feel free to
+                                                     schedule a 15 minute check-in <a href=
+                                                     "https://calendar.google.com/calendar/selfsched?sstoken=UUJlRHc1WUVROWFQfGRlZmF1bHR8MjE3ZmY3MGY5ZmM3YTNjYjZkM2M0NzliYjIzZjI0MzA" target="_blank">meeting</a></li>
+                                            </ul>
+                                        </li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Saturday, July 4</div>
+                            <ul>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/hog/" target="_blank">Hog</a> is due Monday, July 6! (Sunday for bonus point)
+                                    <ul>
+                                        <li class="text-muted">There will be an additional Hog project party on Sunday (time: TBD, keep a lookout on Piazza)
+                                            <ul>
+                                                <li class="text-muted">It will be traditional OH style (queue based) with multiple concurrent Zoom calls going on for different problems</li>
+                                                <li class="text-muted">Check Piazza for the relevant Zoom links</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">The <a href="#slides">discussion slides section</a> of this website also contains links to the relevant recordings/playlists!</li>
+                                <li class="text-muted">Course staff is currently making walkthrough videos for the Diagnostic Quiz
+                                    <ul>
+                                        <li class="text-muted">Sorry about the technical difficulties :( (but that's kinda what it was meant for!)</li>
+                                        <li class="text-muted">I know it was really challenging! You are not alone if you feel this way; it was a very difficult exam.</li>
+                                        <li class="text-muted">Again, if you're feeling anxious, worried that you're falling behind, or just want to chat, feel free to
+                                            schedule a 15 minute check-in <a href=
+                                            "https://calendar.google.com/calendar/selfsched?sstoken=UUJlRHc1WUVROWFQfGRlZmF1bHR8MjE3ZmY3MGY5ZmM3YTNjYjZkM2M0NzliYjIzZjI0MzA" target="_blank">meeting</a></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Cats is scheduled to release on Monday, July 6
+                                    <ul>
+                                        <li class="text-muted">Yes, that is the same date that Hog is due...</li>
+                                        <li class="text-muted">The class is really kicking into high gear in terms both pace and difficulty, so try your best to stay on top of assignments
+                                            <ul>
+                                                <li class="text-muted">Please take advantage of <a href="https://oh.cs61a.org/appointments" target="_blank">OH appointments</a>, parties, Piazza, live lecture, etc.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Tuesday, July 7</div>
+                            <ul>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/hog/" target="_blank">Hog</a> (EC) deadline has been pushed back by 2 days!
+                                    <ul>
+                                        <li class="text-muted">EC due today, entire project due tomorrow</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Lab 03 (also extended) and HW 03 due today</li>
+                                <li class="text-muted">Lab 04 due tomorrow
+                                <li class="text-muted">Cats will be released tomorrow
+                                    <ul>
+                                        <li class="text-muted">Cats Project Party tomorrow night 3:00 - 6:00 PM (PDT)</li>
+                                    </ul>
+                                </li>        
+                                <li class="text-muted">Midterm next Thursday, July 16 5:00 - 8:00 PM (PDT)
+                                    <ul>
+                                        <li class="text-muted">Start studying this weekend!</li>
+                                        <li class="text-muted"><a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZcw5FXtcXCJNzDS68a418q6" target="_blank">Diagnostic Quiz Walkthrough</a></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted"><a href="https://piazza.com/class/kbesvacrkom2of?cid=555" target="_blank">Sign up</a> for small group tutoring! There are still spots left for recurring and drop-in sections</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Friday, July 10</div>
+                            <ul>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/cats/" target="_blank">Cats</a> has been released!
+                                    <ul>
+                                        <li class="text-muted">Due Thursday, July 23 (submit a day early for EC)</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Lab 05 due today!</li>
+                                <li class="text-muted">HW 04 due this upcoming Tuesday (July 14) 
+                                <li class="text-muted">Midterm is in less than one week O_O (Thursday, July 16 6:00 - 8:00 (PDT))
+                                    <ul>
+                                        <li class="text-muted">New practice midterm has been posted!</li>
+                                    </ul>
+                                </li>        
+                                <li class="text-muted"><a href="https://piazza.com/class/kbesvacrkom2of?cid=555" target="_blank">Sign up</a> for small group tutoring! There are still spots left for recurring and drop-in sections</li>
+                                <li class="text-muted">Starting next week, course staff will be offering ten-minute OH appointment slots for smaller debugging tasks
+                                    <ul>
+                                        <li class="text-muted">Be on the lookout on Piazza for the official announcement</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Saturday, July 11</div>
+                            <ul>
+                                <li class="text-muted">Congratulations to the <a href="https://piazza.com/class/kbesvacrkom2of?cid=998" target="_blank">Hog Contest winners</a> and thank you to all those who participated (<a href="https://hog-contest.cs61a.org/" target="_blank">finalized leaderboard</a>)!</li>
+                                <li class="text-muted">Grades! Check your current assignment scores and see what scores you would need for your target final grade at <a href="https://howamidoing.cs61a.org/" target="_blank">howamidoing.cs61a.org</a></li>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/cats/" target="_blank">Cats</a> has been released!
+                                    <ul>
+                                        <li class="text-muted">Due Thursday, July 23 (submit a day early for EC)</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">HW 04 due this upcoming Tuesday (July 14) 
+                                <li class="text-muted">Midterm is in less than one week O_O (Thursday, July 16 6:00 - 8:00 (PDT))
+                                    <ul>
+                                        <li class="text-muted">New practice midterm has been posted!</li>
+                                        <li class="text-muted">A rubric is currently being written and will be released soon</li>
+                                        <li class="text-muted">The Diagnostic Quiz rubric can found on <a href="https://www.gradescope.com/courses/145331" target="_blank">Gradescope</a></li>
+                                    </ul>
+                                </li>        
+                                <li class="text-muted"><a href="https://piazza.com/class/kbesvacrkom2of?cid=555" target="_blank">Sign up</a> for small group tutoring! There are still spots left for recurring and drop-in sections</li>
+                                <li class="text-muted">Starting <s>next week</s> the week after the midterm, course staff will be offering ten-minute OH appointment slots for smaller debugging tasks
+                                    <ul>
+                                        <li class="text-muted">Be on the lookout on Piazza for the official announcement</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>      
+                   
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Tuesday, July 14</div>
+                            <ul>
+                                <li class="text-muted"><b>❗❗❗ HI HELLO PLEASE FILL OUT THIS ANONYMOUS <a href="https://forms.gle/FcKJkjuQmxwQ4gV57" target="_blank">SURVEY</a> ❗❗❗</b></li>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/cats/" target="_blank">Cats checkpoint due tonight</a>!
+                                    <ul>
+                                        <li class="text-muted">Only 4 questions, 5 points total and the problems will help prepare you for the midterm</li>
+                                        <li class="text-muted">Project party tomorrow night from 3:00 - 6:00 PM (PDT), <b>but we will also take conceptual/exam-prep questions</b>!</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">HW 04 due tonight
+                                <li class="text-muted">Midterm THIS Thursday, July 16
+                                    <ul>
+                                        <li class="text-muted"><b>No discussion this Thursday</b></li>
+                                        <li class="text-muted">Scope: lecture content up until yesterday, July 13 (up until nonlocal)</li>
+                                        <li class="text-muted"><a href="https://piazza.com/class/kbesvacrkom2of?cid=685" target="_blank">Studying Guide</a> (by Ryan)</li>
+                                        <li class="text-muted"><a href="https://gist.github.com/LarynQi/31089f9c4e9ae77df6edc421910703f5" target="_blank">Exam Tips</a></li>
+                                        <li class="text-muted">Not finalized yet, but all the midterm questions will probably be worth around the same number of points</li>
+                                        <li class="text-muted">You cannot unlock questions earlier even if you finish the previous question early</li>
+                                        <li class="text-muted">For an example of reverse WWPD, see <a href="https://cs61a.org/disc/disc06.pdf#page=6" target="_blank">disc06 Q2.3</a>; for reverse environment diagram see <a href="https://cs61a.org/assets/pdfs/61a-sp20-final.pdf#page=5" target="_blank">SP20 Final Q2</a></li>
+                                    </ul>
+                                </li>       
+                                <li class="text-muted">Lab 06 + Lab 07 due Friday
+                                    <ul>
+                                        <li class="text-muted">Lab 07 is MT Review (solutions already released), but <b>be sure to still submit to get credit</b>!</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">More people showed up to last Thursday's discussion than filled out the attendance form
+                                    <ul>
+                                        <li class="text-muted">If you forgot or are missing discussion credit, let me know via email/PM</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Starting next week, course staff will be offering ten-minute OH appointment slots for smaller debugging tasks
+                                    <ul>
+                                        <li class="text-muted">Be on the lookout on Piazza for the official announcement</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Tuesday, July 21</div>
+                            <ul>
+                                <li class="text-muted">HW 05 due tonight, Lab 08 due tomorrow</li>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/cats/" target="_blank">Cats</a> due on Thursday
+                                    <ul>
+                                        <li class="text-muted">Project party tomorrow night from 3:00 - 6:00 PM (PDT)</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">New <a href="https://piazza.com/class/kbesvacrkom2of?cid=1347" target="_blank">OH policies</a>
+                                    <ul>
+                                        <li class="text-muted">10 min appointments for lab or conceptual questions</li>
+                                        <li class="text-muted">Will still have 20 min appointments, but those will be geared toward HW, Projects, or exam-prep</li>
+                                        <li class="text-muted">Lab parties will be held twice a week from this week forward (links on Piazza)
+                                            <ul>
+                                                <li>Tuesday's, 1:00 - 3:00 PM (PDT)</li>
+                                                <li>Thursday's, 10:00 AM - 12:00 PM (PDT)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>       
+                                <li class="text-muted">We have just passsed the midpoint of the semester!
+                                    <ul>
+                                        <li>If there's anything you want to tell me (anonymously), if I was ever rude to you, if you have a suggestion for section, etc. → <a href="https://links.cs61a.org/laryn-feedback" target="_blank">links.cs61a.org/laryn-feedback</a></li></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Check this website at the start of every discussion from now on to get the code file for section!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Friday, July 24</div>
+                            <ul>
+                                <li class="text-muted">Lab 09 due tonight</li>
+                                <li class="text-muted">Sign up for <a href="https://piazza.com/class/kbesvacrkom2of?cid=1530" target="_blank">Midterm Advising</a>!
+                                    <ul>
+                                        <li class="text-muted">20 minute appointment slot, 1-on-1 chat with a staff member</li>
+                                        <li class="text-muted">To vent, get the most out of assignments, discuss study strategies for the Final, etc. </li>
+                                    </ul>
+                                </li>       
+                                <li class="text-muted">Midterm regrade requests are due today
+                                    <ul>
+                                        <li>If you feel like you were graded unfairly according to the rubric, feel free to make a request on Gradescope explaining how the rubric was incorrectly applied to your work</li></li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/ants/" target="_blank">Ants</a> has been released (fun project yay)! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/img/ants50.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/img/bee50.gif"/></li>
+                                <li class="text-muted">HW 06 has been released and contains the course-wide mid-semester survey</li>
+                                <li class="text-muted">When signing up for OH appointments, please fill out the assignment, question number, and description to the best of your ability so that the staff member can come as prepared as possible to help you!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="announcement">
+                            <div class="text-muted">Tuesday, August 4</div>
+                            <ul>
+                                <li class="text-muted">HW 07 due tonight, Lab 12 due tomorrow</li>
+                                <li class="text-muted"><a href="https://cs61a.org/proj/scheme/" target="_blank">Scheme</a> is released!
+                                    <ul>
+                                        <li class="text-muted">There are multiple checkpoints! 2nd checkpoint due Thursday, August 6</li>
+                                        <li class="text-muted">Final deadline: Monday, August 10 (Sunday for bonus point)</li>
+                                        <li class="text-muted">Scheme spec walks you through exactly what to change and where; refer back to it</li>
+                                    </ul>
+                                </li>       
+                                <li class="text-muted">Final is in 9 days! 
+                                    <ul>
+                                        <li>You don't have much time (no dead week 😔) so optimize how you study by prioritizing your weak areas --> see the CS61A <a href="https://cs61a.org/resources.html" target="_blank">Resources</a> tab where it divides problems by topics
+                                            <ul>
+                                                <li>Guides: Conceptual introduction/review</li>
+                                                <li>Practice Problems: Mid/Assignment-level questions</li>
+                                                <li>Exam questions: Exam-level problems (from past exams)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Infer what you can about which topics will be on the exam
+                                            <ul>
+                                                <li>Format is the same as the Midterm (7 questions)</li>
+                                                <li><b>I haven't seen the Final but this is what I would guess!</b></li>
+                                                <li>The Final is cumulative, but post-Midterm topics have to be covered somewhere (1. OOP, 2. Linked Lists, 3. General Scheme (Lists, Tail Recursion), 4. Macros and/or Streams, 5. SQL)</li>
+                                                <li>6. Tree Recursion is a core topic in CS61A</li>
+                                                <li>7. Your weakest area</li>
+                                            </ul>
+                                        </li>
+                                        <li>Topical Review Sessions are confirmed to be held this Friday, next Monday, and next Tuesday!
+                                            <ul>
+                                                <li>See Piazza for the official announcement (hasn't been announced yet)</li>
+                                                <li>Spring 2020 Topical Review Sessions can be found on <a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZfYDWV_wkOyG5o_C6LLvWfX" target="_blank">YouTube</a>
+                                                    <ul>
+                                                        <li>See <a href="#resources">my Resources tab</a> below for the link to the slides/code</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>A <b>synchronous</b> practice Final will be held at the beginning of next week!
+                                            <ul>
+                                                <li>Format will be exactly the same as the actual Final</li>
+                                                <li>See Piazza for the official announcement (hasn't been announced yet)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <div class="announcement">
+                            <div class="text-muted">Wednesday, August 12</div>
+                            <ul>
+                                <li class="text-muted">You are done with all required CS61A assignments & projects!</li>
+                                <li class="text-muted">Last week of class means:
+                                    <ul>
+                                        <li class="text-muted">Submit all your regrade requests for assignments</li>
+                                        <li class="text-muted">Complete your HW recovery (<a href="https://piazza.com/class/kbesvacrkom2of?cid=395" target="_blank">Piazza post</a>)</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Fill out your Berkeley Course Evaluations (should have received link via email)!</li>       
+                                <li class="text-muted">Final is <b>TOMORROW</b>
+                                    <ul>
+                                        <li><a href="https://youtu.be/22x3YMdp67U" target="_blank">Programming Languages</a> & <a href="https://youtu.be/sXXmfojZA2k" target="_blank">Machine Learning</a> lectures <b>are in scope</b> (MC, should be straightforward as long as you attended/watched the lectures)
+                                        </li>
+                                        <li>Today's special topics is <b>not in scope</b> for the final (Navigating Berkeley by Chae)
+                                            <ul>
+                                                <li>We still recommend you watch it (even if it's after the final)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">This is the final stretch, finish strong! After tomorrow, you will be done with CS61A forever :,(
+                                    <ul>
+                                        <li>If you are interested in getting into teaching/more involved with CS61A, feel free to contact me (email, drop-in, Discord, etc.)!</li>
+                                    </ul>
+                                </li>     
+                                <li class="text-muted">I will still hold drop-in appointments/OH Friday morning and potentially next week (11:00 AM - 12:00 PM) if you want to chat</li>
+                                <br><br><br>
+                                <div class="special-message"><i>Thank you for an incredible semester. You all have come so far and I couldn't have asked for a better first-time TA experience.</i></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </a>
+            </div>
+        </section>
+
+        <!-- Labs & Discussions -->
+        <section class="page-section bg-light" id="slides">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Slides</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <ul>
+                            <b><u>Labs</u></b>
+                            <li> 00: Getting Started
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab00/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab00/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 01: Functions and Control
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab01/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab01/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 02: HOFs, λ's, Self Reference
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab02/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab02/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 03: (Tree) Recursion
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab03/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab03/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 04: Lists, Data Abstraction
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab04/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab04/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 05: Lists, Trees
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab05/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab05/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 06: Nonlocal & Generators
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab06/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab06/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 07: Midterm Review
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab07/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab07/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 08: Object-Oriented Programming
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab08/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab08/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 09: Linked Lists, Mutable Trees
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab09/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab09/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 10: Scheme, Scheme Lists
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab10/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab10/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 11: Interpreters
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab11/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab11/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 12: Macros, Streams
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab12/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab12/" target="_blank">Solutions</a></li>
+                                    <li>Solutions</li>
+                                </ul>
+                            </li>
+                            <li> 13: SQL
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab13/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab13/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 14: Final Review
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab14/" target="_blank">Lab</a></li>
+                                    <!-- <li>Lab</li> -->
+                                    <!-- <li><a href="" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://cs61a.org/lab/sol-lab14/" target="_blank">Solutions</a></li>
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                        <ul>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <b><u>Discussions</u></b>
+                            <li> 00: Welcome to CS61A!
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc00.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc00_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1Nj-HMcpekCT_xeIeP1YicVvE8asPTDwmyD6H2ajV6XI/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=Cj1nY53IhfE" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 01: Control and Environments
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc00.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc01_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/17pGJowNKXHWC1S00FtOKZZ9THJXrSsLS?usp=sharing" target="_blank">Slides + Quizzes</a>
+                                        <ul>
+                                            <li><a href="https://gist.github.com/LarynQi/e64bed1920bfe3d35b2f6c30ead8033e" target="_blank">quiz1.4 skeleton</a></li>
+                                            <li><a href="https://gist.github.com/LarynQi/66efe0ec97acc92cf9df75ea87bacf5a" target="_blank">quiz1.4 solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/watch?v=cMzvVVq9Vec&list=PLx38hZJ5RLZdz4Lab5Gjqi7plVZfx-C_Z&index=5" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 02: Higher Order Functions
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc02.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc02_sol.pdf" target= "_blank">Solutions</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/1cKIgPbaIXgczHOqVWZUoLhKHfPPXzjqi?usp=sharing" target="_blank">Slides + Quizzes</a></li>
+                                    <ul>
+                                        <li><a href="https://gist.github.com/LarynQi/677333bf832bd4fe90abc86c5ea09f0d" target="_blank">Challenge one-liner (Q1.6)</a></li>
+                                    </ul>
+                                    <li><a href="https://www.youtube.com/watch?v=mw8MHMsPF4M&list=PLx38hZJ5RLZeLWdG5mVAXiIhUemoLKRdo&index=3" target="_blank">Video</a></li>
+                                    <!-- <li><a target="_blank">Solutions</a></li> -->
+                                    <!-- <li>Worksheet</li>
+                                    <li>Slides</li> -->
+                                    <!-- <li>Solutions</li> -->
+                                </ul>
+                            </li>
+                            <li> 04: Recursion and Tree Recursion
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc04.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc04_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://gist.github.com/LarynQi/55ee8e25bd23dcdde5a8a5c362a110f1" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/b828f84bac7d59802a7bd128aa5ec2f9" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1b325AyTQVAcL0627qlqs7VNpqAH0qF8IxxMFVqJqdP0/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=0I8MLWvCBFk&list=PLx38hZJ5RLZeDYTfGDTjBsROZN8DNd9Qp&index=5" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 05: Trees and Mutability
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc05_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://gist.github.com/LarynQi/4ff44b47f021a16e8c436d87dd445648" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/fb9ad83bce1d618bf34029a136678b40" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1Zek9NdL9ni1m3-gygUDUBnbcu2VoNNLDgBDS55sQBK0/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=l9nIH6pGOj8&list=PLx38hZJ5RLZdTQKvGWXcR7PJ3SfeGF7UY&index=4" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 06: Nonlocal and Midterm Review
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc06.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc06_sol.pdf" target="_blank">Solutions</a>
+                                        <ul>
+                                            <li><a href="https://gist.github.com/LarynQi/26e84716258868c10ce522195263a08e" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/fd31f1e0aa44247eaefcc9255ab3751d" target="_blank">Solutions</a> (for the worksheet)</li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <!-- <li>Slides</li> -->
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li>
+                                    <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=8N_I6Wvn1A8&list=PLx38hZJ5RLZfqak5xdRnjvZCPTVpoCwwX&index=5" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 08: Iterators/Generators & OOP
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc08.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc08_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://gist.github.com/LarynQi/b1f5ca8b0b56e67b388aafea3669e18f" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/b0527e284812c060f4b98a63c28db3a2" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1N5brkOFPJZL9HYQx6ncS8ujd7vH_FL7T4d3oYUfraQU/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=Cq_xNjx9oJs&list=PLx38hZJ5RLZcG3cz-wZaZKiHF27kC-xvr&index=7" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 09: Linked Lists and Trees
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc09.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc09_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://gist.github.com/LarynQi/6482110df3815b697620f56f1bb5ce21" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e2e94376f8ab31a2fdc19bbaffcf05e" target="_blank">Solutions</a></li>
+                                    <!-- <li>Slides</li> -->
+                                    <li><a href="https://docs.google.com/presentation/d/1PMDf-zWnHErlemwqTQ-aKdQ39IBad02kYk9Tz3DScpY/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <a href="https://www.youtube.com/watch?v=UMYF7i-47W4&list=PLx38hZJ5RLZc8WH8_TK0cA_UGRQ-eAqYa&index=5" target="_blank">Video</a>                                    <!-- <li><a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZfqak5xdRnjvZCPTVpoCwwX" target="_blank">Video</a></li> -->
+                                    <!-- <li><a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZfqak5xdRnjvZCPTVpoCwwX" target="_blank">Video</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 10: Scheme
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc10.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc10_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://gist.github.com/LarynQi/3e92fd961b48f4c240d41047f8e21890" target="_blank">File</a> | Solutions</li>
+                                    <!-- <li>Slides</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1PMDf-zWnHErlemwqTQ-aKdQ39IBad02kYk9Tz3DScpY/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=ro18n6BMahg&list=PLx38hZJ5RLZdWp8vxpHXgB_bE3m9fmL_k&index=4" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 11: Tail Recursion and Macros
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc11.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc11_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="assets/discs/disc11.zip" target="_blank">File</a> | Solutions</li>
+                                    <li><a href="https://docs.google.com/presentation/d/1P5eZYFVFEQA1yDWwwP9huMFzhaXhGNCb1ZxmerzUEYM/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1PMDf-zWnHErlemwqTQ-aKdQ39IBad02kYk9Tz3DScpY/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=AIYaG3XXOU0&list=PLx38hZJ5RLZe8AKMAdQCXBJZCquV7921B&index=3" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 12: Streams
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc12.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc12_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="assets/discs/disc12.zip" target="_blank">File</a> | <a href="assets/discs/sol12.zip" target="_blank">Solutions</a></li>
+                                    <!-- <li>Slides</li> -->
+                                    <li><a href="https://docs.google.com/presentation/d/12K6B7wfIPIv-OKDlGI_wOlCqmKdbqXHWa6g6gVfQXvk/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=6f_hkGfGc6g&list=PLx38hZJ5RLZfd98WGWVhQcWOap6AS60gR&index=3" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 13: SQL
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc13.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc13_sol.pdf" target="_blank">Solutions</a></li>
+                                    <!-- <li><a href="assets/discs/disc12.zip" target="_blank">File</a> | <a href="assets/discs/sol12.zip" target="_blank">Solutions</a></li> -->
+                                    <!-- <li>Slides</li> -->
+                                    <li><a href="https://docs.google.com/presentation/d/1FXpvC-xW-lhmbrMBGBHOW_j5JFErl0dF1OX8_iYSOzI/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=6f_hkGfGc6g&list=PLx38hZJ5RLZfd98WGWVhQcWOap6AS60gR&index=3" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                            <li> 14: Final Review
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc14.pdf" target="_blank">Worksheet</a> | <a href="https://cs61a.org/disc/disc14_sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="assets/discs/disc14.zip" target="_blank">Exam</a> | <a href="assets/disc14.zip" target="_blank">Decrypted</a> | Solutions</li>
+                                    <!-- <li>Slides</li> -->
+                                    <li><a href="https://docs.google.com/presentation/d/1ITTxrSRbQeEKQwhPUefnifC4FqOqaNId2F5BCa6SFqw/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <!-- <li><a href="https://cs61a.org/disc/disc05.pdf" target="_blank">Worksheet</a> | Solutions</li> -->
+                                    <!-- <li><a href="https://gist.github.com/LarynQi/dad227d6be7bc4f7ca989460add3c496" target="_blank">File</a> | <a href="https://gist.github.com/LarynQi/6e02582bb3cddcffabcae5339647d143" target="_blank">Solutions</a> (that we used in class)</li> -->
+                                    <!-- <li><a href="https://docs.google.com/presentation/d/1b8iGtYwa5JF98nYYmcd63fVw1-VORL70VT5cj-_BnqQ/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                    <!-- <li>Video</li> -->
+                                    <li><a href="https://www.youtube.com/watch?v=hOPKYzxcWHU&list=PLx38hZJ5RLZeW7JvJJqog_h_eY152bujd&index=2" target="_blank">Video</a></li>
+                                </ul>
+                            </li>
+                        <ul>
+                    </div>
+            </div>
+        </section>
+       
+        <!-- Resources-->
+        <section class="page-section" id="resources">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Resources</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <b><u>Learn/Practice</u></b>
+                            <li><a href="http://pythontutor.com/composingprograms.html#mode=edit" target="_blank">Python Tutor</a></li>
+                            <li><a href="https://code.cs61a.org/" target="_blank">CS61A Interpreters</a></li>
+                        <ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <b><u>Exam Prep</u></b>
+                            <li><a href="https://gist.github.com/LarynQi/31089f9c4e9ae77df6edc421910703f5" target="_blank">Exam Tips</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/playlists" target="_blank">Exam Walk-throughs</a></li>
+                            <li><a href="https://docs.google.com/presentation/d/1wB4ZtYsjgCfoQf-ZBp1jDPI-vdQ_8625GuLtLF-2h9o/edit?usp=sharing" target="_blank">MT2 Review Slides [SP20]</a></li>
+                            <li>CSM MT2 Review [SP20]
+                                <ul>
+                                    <li><a href="https://docs.google.com/presentation/d/1OxvcZMaor_5OtMtD6gpbOz-Rgv7Q0qlMU69bhUUqR_M/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://youtu.be/r0QxOF6geYc?t=1689" target="_blank">Zoom</a></li>
+                                </ul>
+                            </li>
+                            <li>CSM Final Review [SP20]
+                                <ul>
+                                    <li><a href="https://docs.google.com/presentation/d/1jZCs6Qiq4TGqBM99o9GsB3X3HjwYhg_ou9UKGFQWgXY/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://berkeley.zoom.us/rec/share/380rN7brqE9OX9LkwljPUb4ZLIvDeaa8gClP_vIJmRxMUcYlmjQi6P1Sth5ohUZY" target="_blank">Zoom</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZfYDWV_wkOyG5o_C6LLvWfX" target="_blank">Topical Review Sessions (Final) [SP20]</a>
+                                <ul>
+                                    <li><a href="https://drive.google.com/open?id=1HVkbS4euZMYgzfL4kaypCI9_6Dn7YLKQ" target="_blank">OOP Slides + Worksheet + Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1lJsNcF_8UG6GtQrxuSx7DVVpD8acDD_8h3BopifEbd4/edit?usp=sharing" target="_blank">Linked Lists Slides</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1N8ubbi6KKDXdA8xDHGG774mCRTjUbHny/view" target="_blank">Trees Slides</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/1vZKNxP7mpfeGlHhcGZ5tUuLnUGsz6XTn" target="_blank">Trees Code + Solutions</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/1sc1jatJmk247-yC5Q_ZujpRc7EORZ3en" target="_blank">Scheme Slides + File</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1FYkIW8Uf0j8KXZgDpmvEvIo1mBY323kxdedBXF51dBQ/edit#slide=id.p" target="_blank">Mutable Functions & Objects Slides</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1gLVLUpgt2oCAJctv5bAAreIlqo_uMefpbQRoAfJiw1k/edit#slide=id.g5f707e0c67_0_0" target="_blank">SQL Slides</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://docs.google.com/presentation/d/14mCUXn6av4ftLgr-3Z-pIpky16Oz1Lr0MxE5nKja_oA/" target="_blank">HKN Final Review [SP20] Slides</a></li>
+                            <li><a href="https://youtu.be/z18MDxsot94" target="_blank">OOP Topical Review Session [SU20]</a>
+                                <ul>
+                                    <li><a href="assets/code/oop.py" download="oop.py">Code</a></li>
+                                    <li><a href="assets/code/oop-sol.py" download="oop-sol.py">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://cs61a.org/resources.html" target="_blank">More</a></li>
+                            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <h4>Kay Garland</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
+                        <ul>
+                    </div>
+                     <div class="col-lg-3">
+                        <ul>
+                            <b><u>Other</u></b>
+                            
+                            <li>Brian Harvey on <a href="https://people.eecs.berkeley.edu/~bh/sicp.html" target="_blank"><i>Why SICP matters</i></a></li>
+                            <li><a href="https://kevinl.info/cs61a/" target="_blank">Learning Computer Science</a></li>
+                            <li><a href="assets/CS 61A Final Studying Tips.pdf" target="_blank">Studying FAQ</a></li>
+                            <li><a href="https://cs61a.org/articles/studying.html" target="_blank">Studying Guide</a></li>
+                            <li><a href="https://docs.google.com/document/d/1ryxWkuXf3HkahsDp426Q-R6q2Iqfgcz-oDHF8OwuJak/edit?usp=sharing" target="_blank">Study Tips [SP20]</a></li>
+<!--                             <li>CSM Final Review [SP20]
+                                <ul>
+                                    <li><a href="https://docs.google.com/presentation/d/1jZCs6Qiq4TGqBM99o9GsB3X3HjwYhg_ou9UKGFQWgXY/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://berkeley.zoom.us/rec/share/380rN7brqE9OX9LkwljPUb4ZLIvDeaa8gClP_vIJmRxMUcYlmjQi6P1Sth5ohUZY" target="_blank">Zoom</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="https://cs61a.org/resources.html" target="_blank">More</a></li> -->
+                            <!-- <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <h4>Kay Garland</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
+                        <ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left"></div>
+                    <div class="col-lg-4 my-3 my-lg-0">© 2020 Laryn Qi
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/larynqi/"><i class="fab fa-linkedin-in"></i></a><a class="btn btn-dark btn-social mx-2" href="https://github.com/LarynQi"><i class="fab fa-github"></i></a><a class="btn btn-dark btn-social mx-2" href="mailto:larynqi@berkeley.edu"><i class="fa fa-envelope"></i></a> -->
+                    </div>
+                    <!-- <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- <div id="particles-js"></div> -->
+        <!-- Particles from Vincent Garreau -->
+        <script src="js/particles.js"></script>
+        <!-- <script src="js/teaching.js"></script> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script> -->
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/teaching.js"></script>
+        <!-- <script src="js/scrolling.js"></script> -->
+    </body>
+    <!-- <a href="assets/code/q2.py" download="test2.py"></a> -->
+    <a href="assets/code/sol1.sql" download="sol1.sql"></a>
+    <a href="assets/code/q1.sql" download="q1.sql"></a>
+    <!-- <a href="assets/code/q2.scm" download="q2.scm"></a>
+    <a href="assets/code/q3.py" download="q3.py"></a>
+    <a href="assets/code/q4.py" download="q4.py"></a>
+    <a href="assets/code/q5.scm" download="q5.scm"></a>
+    <a href="assets/code/q6.py" download="q5.py"></a> -->
+    <a href="assets/code/disc14.zip" download="disc14.zip"></a> <!-- exam -->
+    <a href="assets/discs/disc14.zip" download="disc14.zip"></a> <!-- no timer -->
+    <a href="assets/discs/decrypted.zip" download="decrypted.zip"></a> <!-- decrypted -->
+    <a href="assets/disc14.zip" download="disc14.zip"></a> <!-- decrypted & version compatible (contains source code) -->
+</html>
