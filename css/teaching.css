@@ -9996,6 +9996,12 @@ p {
   /* padding-bottom: 10; */
   margin-top: 0;
   margin-bottom: 2rem;
+  /* max-width: fit-content;
+  align-content: center;
+  margin-left: 50rem;
+  z-index: 20; */
+  z-index: 1000;
+  user-select: all;
 }
 .page-section h3.section-subheading {
   font-size: 1rem;
@@ -10790,7 +10796,23 @@ a {
   /* right: 10vw;
   top: 37.5vw; */
 }
+
+.page-section .text-left {
+  position: relative;
+  top: 6vw;
+  left: 0vw;
+  /* right: 10vw;
+  top: 37.5vw; */
+}
+
 img.lambda:hover{
   /* opacity: 0.5; */
+  z-index: 3;
+  filter: brightness(125%);
+}
+
+img.hug:hover{
+  /* opacity: 0.5; */
+  /* z-index: 3; */
   filter: brightness(125%);
 }
