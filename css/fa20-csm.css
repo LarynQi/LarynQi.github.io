@@ -9990,7 +9990,21 @@ p {
   padding: 2rem 0;
 }
 
-.page-section h2.section-heading {
+.page-section h2.section-heading{
+  /* padding-bottom: 10rem; */
+  font-size: 2rem;
+  /* padding-bottom: 10; */
+  margin-top: 0;
+  margin-bottom: 2rem;
+  /* max-width: fit-content;
+  align-content: center;
+  margin-left: 50rem;
+  z-index: 20; */
+  /* z-index: 1000;
+  user-select: all; */
+}
+
+.page-section h2.section-heading.spaced{
   /* padding-bottom: 10rem; */
   font-size: 2rem;
   /* padding-bottom: 10; */
@@ -10003,6 +10017,9 @@ p {
   /* z-index: 1000;
   user-select: all; */
 }
+
+
+
 .page-section h3.section-subheading {
   font-size: 1rem;
   font-weight: 400;
