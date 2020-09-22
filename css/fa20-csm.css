@@ -10817,7 +10817,8 @@ a {
 }
 
 .icons .denero {
-    position: relative; top: 8vw; left: 37vw;
+    /* position: relative; top: 8vw; left: 37vw; */ /* bigger monitor screen? */
+    position: relative; top: 8vw; left: 34vw;
 }
 
 .icons .hug {
