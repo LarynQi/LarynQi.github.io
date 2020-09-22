@@ -10833,6 +10833,10 @@ a {
   z-index: 1000;
 }
 
+.icons {
+  margin-top: -6rem;
+}
+
 .icons .denero {
     /* position: relative; top: 8vw; left: 37vw; */ /* bigger monitor screen? */
     position: relative; top: 8vw; left: 34vw;
