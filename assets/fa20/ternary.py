@@ -2,6 +2,8 @@
 # source: https://www.programiz.com/python-programming/list-comprehension
 def ternary(s):
     """
+    Negates all the even-indexed elements and doubles the odd-indexed elements.
+
     >>> lst = [1, 2, 3, 4, 5]
     >>> ternary(lst)
     [-1, 4, -3, 8, -5]
