@@ -10827,3 +10827,19 @@ img.hug:hover{
   /* z-index: 3; */
   filter: brightness(125%);
 }
+
+.icons {
+  margin-top: -6rem;
+}
+
+.icons .denero {
+    /* position: relative; top: 8vw; left: 37vw; */ /* bigger monitor screen? */
+    /* position: relative; top: 12vw; left: 25vw; */
+    position: relative; top: 6.5vw; left: 48vw;
+}
+
+img.denero:hover{
+  /* opacity: 0.5; */
+  /* z-index: 3; */
+  filter: brightness(125%);
+}

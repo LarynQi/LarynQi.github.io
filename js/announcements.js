@@ -17,7 +17,7 @@ if (month == 4 && day == 1) {
     // document.getElementById("denero-audio").play();
 } else {
     var denero = document.getElementById("denero");
-    denero.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/announcements.mp3"); audio.play();};
+    denero.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/announcements.mov"); audio.play();};
     document.getElementById("denero-link").removeAttribute("href");
     denero.style.cursor = "pointer";
 }
