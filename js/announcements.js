@@ -20,4 +20,8 @@ if (month == 4 && day == 1) {
     denero.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/announcements.mov"); audio.play();};
     document.getElementById("denero-link").removeAttribute("href");
     denero.style.cursor = "pointer";
+    var hug = document.getElementById("hug");
+    hug.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/hello.MOV"); audio.play();};
+    document.getElementById("hug-link").removeAttribute("href");
+    hug.style.cursor = "pointer";
 }
