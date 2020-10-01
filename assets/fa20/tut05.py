@@ -1,3 +1,10 @@
+"""
+run:
+
+python3 -m doctest -v tut05.py
+
+"""
+
 # Q1.3
 def square_tree(t):
     """Return a tree with the square of every element in t
