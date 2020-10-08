@@ -1,5 +1,12 @@
 import sys
-# following line increases recursion limit (not safe!)
+"""
+run:
+
+python3 -m doctest -v merge.py
+
+"""
+
+# the following line increases recursion limit (not safe!)
 # sys.setrecursionlimit(10000)
 # Q4.2 recursive
 def merge(a, b):
