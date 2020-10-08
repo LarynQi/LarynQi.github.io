@@ -20,7 +20,7 @@ def merge(a, b):
     >>> result = merge(a, b) # 2, 3, 5, 7, 8, 9, 11, 13, 14, 15
     >>> [next(result) for _ in range(10)]
     [2, 3, 5, 7, 8, 9, 11, 13, 14, 15]
-    >>> for _ in range(1000): # try changing the input to `range`!
+    >>> for _ in range(10): # try changing the input to `range`!
     ...         garbage = next(result)
     """
     def helper(a, b, val_a, val_b):
@@ -42,7 +42,7 @@ recursive call needs to know what the current value in a and b are and without t
 single frame, extra information needs to be passed from layer to layer.
 
 However, this solution works! ... for small inputs. If you change the argument to the range function on 
-line 14 from 10 to a large number like 1000, you'll see that Python will give up and spit out a RecursionError.
+line 23 from 10 to a large number like 1000, you'll see that Python will give up and spit out a RecursionError.
 There are ways to get around this (see https://stackoverflow.com/questions/3323001/what-is-the-maximum-recursion-depth-in-python-and-how-to-increase-it),
 but apparently it's not safe and thus not recommended.
 
