@@ -21,15 +21,15 @@ for (var i = 0; i < attributes.length; i += 1) {
             // if (href.includes('assets')) {
             if (href.substring(0, 6) === 'assets') {
                 var url = attributes[i].href;
-                alert(url);
                 if (url.length >= 4) {
                     if (url.substring(0, 4) === 'http') {
-                        alert(url);
+                        // alert(url);
                         var exists = UrlExists(attributes[i].href);
                         if (!exists) {
-                            curr.remove();
+                            curr.removeAttribute('href');
+                            alert(url);
                         }
-                        alert(UrlExists(attributes[i].href));
+                        // alert(UrlExists(attributes[i].href));
                     }
                 }
                 // var asset = new File('/' + href);
