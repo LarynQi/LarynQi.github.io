@@ -3,9 +3,13 @@
 // https://stackoverflow.com/questions/3646914/how-do-i-check-if-file-exists-in-jquery-or-pure-javascript
 function UrlExists(url) {
     var http = new XMLHttpRequest();
-    http.open('HEAD', url, true);
-    http.send();
-    return http.status != 404;
+    try {
+        http.open('HEAD', url, false);
+        http.send();
+    } catch {
+        console.clear();
+        return http.status != 404;
+    }
 }
 // alert(UrlExists('https://feross.org/resume/'));
 // alert(UrlExists('https://cs61a.org/lab/sol-lab07/'));
@@ -29,7 +33,10 @@ for (var i = 0; i < attributes.length; i += 1) {
         href = attributes[i].getAttribute('href');
         // alert(href);
         if (href.includes('cs61a.org')) {
-            var temp;
+            var exists = UrlExists(proxy + attributes[i].href);
+            if (!exists) {
+                curr.removeAttribute('href');
+            }
         } else {
             if (href.length >= 6) {
                 // if (href.includes('assets')) {
@@ -42,6 +49,7 @@ for (var i = 0; i < attributes.length; i += 1) {
                             if (!exists) {
                                 curr.removeAttribute('href');
                                 // alert(url);
+                                // alert('here');
                             }
                             // alert(UrlExists(attributes[i].href));
                         }
