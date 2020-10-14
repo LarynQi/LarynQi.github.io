@@ -8,8 +8,8 @@ function UrlExists(url) {
         http.send();
     } catch {
         console.clear();
-        return http.status != 404;
     }
+    return http.status != 404;
 }
 // alert(UrlExists('https://feross.org/resume/'));
 // alert(UrlExists('https://cs61a.org/lab/sol-lab07/'));
