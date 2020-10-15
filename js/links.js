@@ -71,7 +71,7 @@ async function Smartify(){
                 const exists = UrlExists(proxy + attributes[i].href, i);
                 // exists.then( (val) => alert(val));
 // attributes[val[1]].removeAttribute('href')
-                exists.then((val) => !val[0] ? alert(attributes[val[1]].getAttribute('href')) : alert('ignored'));
+                exists.then((val) => !val[0] ? attributes[val[1]].removeAttribute('href') : alert('ignored'));
                 // alert('done');
                 // alert(exists);
                 // if (!exists) {
