@@ -16,7 +16,7 @@ async function UrlExists(url, curr) {
         const save = curr;
         const response = await fetch(url, {
             method: 'HEAD',
-            mode: 'no-cors',
+            mode: 'cors',
             caches: 'no-cache',
             credentials: 'same-origin'
         })
@@ -29,7 +29,8 @@ async function UrlExists(url, curr) {
         alert(response.ok);
         return true;
     } catch {
-        alert("here");
+        // alert("here");
+        console.log("Unexpected fetch error.")
         return false;
     }
 
@@ -44,8 +45,8 @@ async function UrlExists(url, curr) {
 // const xhr = new XMLHttpRequest();
 // https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
 // https://github.com/Rob--W/cors-anywhere/#documentation
-// const proxy = 'https://cors-anywhere.herokuapp.com/'
-const proxy = ''
+const proxy = 'https://cors-anywhere.herokuapp.com/'
+// const proxy = ''
 
 // const url2 = 'https://cors-anywhere.herokuapp.com/https://cs61a.org/lab/sol-lab06/';
 
@@ -70,15 +71,16 @@ async function Smartify(){
                 // alert(href);
                 const exists = UrlExists(proxy + attributes[i].href, i);
                 // exists.then( (val) => alert(val));
-// attributes[val[1]].removeAttribute('href')
-                exists.then((val) => !val[0] ? attributes[val[1]].removeAttribute('href') : alert('ignored'));
+                // attributes[val[1]].removeAttribute('href')
+                //alert('ignored')
+                exists.then((val) => !val[0] ? attributes[val[1]].removeAttribute('href') : 1);
                 // alert('done');
                 // alert(exists);
                 // if (!exists) {
                 //     curr.removeAttribute('href');
                 // }
             } else {
-                continue;
+                // continue;
                 if (href.length >= 6) {
                     // if (href.includes('assets')) {
                     if (href.substring(0, 6) === 'assets') {
