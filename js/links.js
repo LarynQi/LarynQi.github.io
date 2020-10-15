@@ -58,9 +58,9 @@ const proxy = 'https://cors-anywhere.herokuapp.com/'
 var attributes = document.getElementsByTagName('a');
 var href;
 var curr;
-function RequestFail (curr) {
-    curr.removeAttribute('href');
-}
+// function RequestFail (curr) {
+//     curr.removeAttribute('href');
+// }
 async function Smartify(){
     for (var i = 0; i < attributes.length; i += 1) {
         curr = attributes[i];
@@ -88,12 +88,16 @@ async function Smartify(){
                         if (url.length >= 4) {
                             if (url.substring(0, 4) === 'http') {
                                 // alert(url);
-                                var exists = UrlExists(attributes[i].href);
-                                if (!exists) {
-                                    curr.removeAttribute('href');
-                                    // alert(url);
-                                    // alert('here');
-                                }
+                                const exists = UrlExists(attributes[i].href, i);
+                                exists.then((val) => !val[0] ? attributes[val[1]].removeAttribute('href') : 1);
+                                
+                                // var exists = UrlExists(attributes[i].href);
+                                // if (!exists) {
+                                //     curr.removeAttribute('href');
+                                //     // alert(url);
+                                //     // alert('here');
+                                // }
+
                                 // alert(UrlExists(attributes[i].href));
                             }
                         }
