@@ -27,6 +27,8 @@ def filter_link(link, f):
     >>> next(g)
     2
     >>> next(g)
+    Traceback (most recent call last):
+        ...
     StopIteration
     >>> list(filter_link(link, lambda x: x % 2 != 0))
     [1, 3]
@@ -82,6 +84,7 @@ class Link:
         else:
             rest = ', ' + repr(self.rest)
         return 'Link({0}{1})'.format(self.first, rest)
+
 class Tree:
     """
     >>> t = Tree(3, [Tree(2, [Tree(5)]), Tree(4)])
