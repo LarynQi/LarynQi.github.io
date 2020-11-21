@@ -1,3 +1,4 @@
+// To test your code, run `javac BerkeleyBytes.java && java BerkeleyBytes`
 public class BerkeleyBytes {
     private static int maxAge = 149;
     public static int[] histogram(int[] ages) {
