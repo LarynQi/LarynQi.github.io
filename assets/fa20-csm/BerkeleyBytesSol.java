@@ -1,6 +1,6 @@
-// To test your code, run `javac BerkeleyBytes.java && java BerkeleyBytes`
+// To test your code, run `javac BerkeleyBytesSol.java && java BerkeleyBytesSol`
 
-public class BerkeleyBytes {
+public class BerkeleyBytesSol {
     private static int maxAge = 149;
     public static int[] histogram(int[] ages) {
         int[] ageCounts = new int[maxAge + 1];
@@ -10,7 +10,14 @@ public class BerkeleyBytes {
         return ageCounts;
     }
     public static int[] ageSort(int[] ages) {
-        // YOUR CODE HERE
+        int[] ageCounts = histogram(ages);
+        int curr = 0;
+        for (int i = 0; i < ageCounts.length; i += 1) {
+            for (int start = curr; curr < start + ageCounts[i]; curr += 1) {
+                ages[curr] = i;
+            }
+        }
+        return ages;
     }
 
     public static void main(String[] args) {
