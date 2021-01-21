@@ -24,4 +24,8 @@ if (month == 4 && day == 1) {
     hug.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/hello.MOV"); audio.play();};
     document.getElementById("hug-link").removeAttribute("href");
     hug.style.cursor = "pointer";
+    var hilfinger = document.getElementById("hilfinger");
+    hilfinger.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/i'm_severus_snape.wav"); audio.play();};
+    document.getElementById("hilfinger-link").removeAttribute("href");
+    hilfinger.style.cursor = "pointer";
 }
