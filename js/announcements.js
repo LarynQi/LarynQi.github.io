@@ -25,7 +25,7 @@ if (month == 4 && day == 1) {
     document.getElementById("hug-link").removeAttribute("href");
     hug.style.cursor = "pointer";
     var hilfinger = document.getElementById("hilfinger");
-    hilfinger.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/i'm_severus_snape.wav"); audio.play();};
+    hilfinger.onclick = function () {var audio = new Audio("https://raw.githubusercontent.com/larynqi/larynqi.github.io/master/assets/audio/im_severus_snape.mov"); audio.play();};
     document.getElementById("hilfinger-link").removeAttribute("href");
     hilfinger.style.cursor = "pointer";
 }
