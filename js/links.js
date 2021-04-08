@@ -14,9 +14,9 @@ async function UrlExists(url, i) {
             method: 'HEAD',
             mode: 'cors',
             caches: 'no-cache',
-            credentials: 'include',
+            credentials: 'same-origin',
             headers: {
-                'Access-Control-Allow-Origin': '*'
+                'X-Requested-With': 'XMLHttpRequest'
             }
         })
         console.log(url, response.ok, response.status)
