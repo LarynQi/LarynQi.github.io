@@ -9,12 +9,17 @@
 async function UrlExists(url, i) {
     try {
         const save = i;
+
         const response = await fetch(url, {
             method: 'HEAD',
             mode: 'cors',
             caches: 'no-cache',
-            credentials: 'same-origin'
+            credentials: 'include',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
         })
+        console.log(url, response.ok, response.status)
         return [response.ok, save];
     } catch {
         console.log("Unexpected fetch error.")
@@ -25,7 +30,8 @@ async function UrlExists(url, i) {
 async function Smartify(){
     // https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
     // https://github.com/Rob--W/cors-anywhere/#documentation   
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    // const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const proxy = 'http://cors-proxy.larynqi.com/'
 
     // https://stackoverflow.com/questions/5897122/accessing-elements-by-type-in-javascript
     var attributes = document.getElementsByTagName('a');
@@ -37,6 +43,7 @@ async function Smartify(){
             href = attributes[i].getAttribute('href');
             if (href.includes('cs61a.org')) {
                 const exists = UrlExists(proxy + attributes[i].href, i);
+                // const exists = UrlExists(attributes[i].href, i);
                 exists.then((val) => !val[0] ? attributes[val[1]].removeAttribute('href') : 0);
             } else {
                 if (href.length >= 6) {
