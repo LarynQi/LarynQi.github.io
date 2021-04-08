@@ -14,10 +14,10 @@ async function UrlExists(url, i) {
             method: 'HEAD',
             mode: 'cors',
             caches: 'no-cache',
-            credentials: 'same-origin',
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-            }
+            credentials: 'same-origin'
+            // headers: {
+            //     'X-Requested-With': 'XMLHttpRequest'
+            // }
         })
         console.log(url, response.ok, response.status)
         return [response.ok, save];
@@ -31,7 +31,8 @@ async function Smartify(){
     // https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
     // https://github.com/Rob--W/cors-anywhere/#documentation   
     // const proxy = 'https://cors-anywhere.herokuapp.com/'
-    const proxy = 'http://cors-proxy.larynqi.com/'
+    // const proxy = 'https://cors-proxy.larynqi.com/'
+    const proxy = 'https://lqi-cors-proxy.herokuapp.com/'
 
     // https://stackoverflow.com/questions/5897122/accessing-elements-by-type-in-javascript
     var attributes = document.getElementsByTagName('a');
