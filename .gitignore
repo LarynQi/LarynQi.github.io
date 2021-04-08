@@ -145,3 +145,37 @@ cython_debug/
 
 # Testing file
 temp.html
+
+crontab
+secrets.txt
+scripts/
+bfg-1.13.2.jar
+myfile.py
+old-teaching.html
+
+css/csm-colors.css
+assets/sp21/tut10/
+assets/sp21/sol03.zip
+assets/sp21/dis03-annotated.pdf
+assets/sp21/dis01.pdf
+assets/sp21-csm/mentor04_sol.pdf
+assets/sp21-csm/mentor04.pdf
+assets/sp21-csm/list-mutability-table.png
+assets/old1.pdf
+assets/old0.pdf
+assets/img/portfolio/ok-logo.svg
+assets/img/bee75.gif
+assets/img/ants75.gif
+assets/img/ants.gif
+assets/img/ant_longthrower.gif
+assets/img/about/cb_logo_blue.png
+assets/img/about/amazon-0.svg
+assets/fa20-csm/mentor11-provided.scm
+assets/fa20-csm/61a-fa18-mt2_sol.pdf
+assets/fa20-csm/61a-6\[old\].pdf
+assets/fa20-csm/61a-6-sol\[old\].pdf
+assets/audio/close.mov
+assets/audio/broken.mov
+assets/audio/\[Intro Video 1\] Welcome to 61B 2019.mp3
+assets/audio/61A Fall 2019 Lecture 2 Video 1.mp3
+assets/sp21/dis05.pdf
