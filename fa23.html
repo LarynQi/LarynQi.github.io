@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Laryn Qi" />
+
+        <meta property="og:title" content="CS 61A Fa23"/>
+        <meta property="og:type" content="Website"/>
+        <meta property="og:url" content="https://larynqi.github.io/fa23"/>
+        <meta property="og:image" content="https://larynqi.github.io/assets/img/previews/preview_cs61a.png"/>
+        <meta property="og:description" content="CS 61A Fa23"/>
+        
+        <title>CS 61A | Fa23</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166903806-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-166903806-1');
+        </script>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/lambda.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/fa20.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="/">Home</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#announcements">Announcements</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#slides">Slides</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://go.cs61a.org/laryn-advising" target="_blank">Meetings</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://go.cs61a.org/laryn-anon" target="_blank">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+
+            <div class="container">
+
+                <div class="masthead-heading">CS 61A Fa23</div>
+                <p class="text-muted"><b>Lab</b>: Tue 2pm - 3:30pm (Soda 330)</p>
+                <p class="text-muted"><b>Discussion</b>: Thu 2pm - 3:30pm (Wheeler 224)</p>
+                <p class="text-muted"><b>Office Hours (Advising)</b>: Tue/Thu 4pm - 5pm (Online)</p>
+                <p class="text-muted">Contact: <code>larynqi@berkeley.edu</code></p>
+
+            </div>
+            <div id="particles-js"></div>
+        </header>
+        
+         <!-- Announcements -->
+         <section class="page-section" id="announcements">
+            <div class="container">
+                <div class="text-center">
+                    <a id="denero-link" href="https://cs61a.org/" target="_blank"><img class="denero" id="denero" src="assets/img/denero-crop-2.PNG" style="max-width: 88px; max-height: 88px;" alt="denero"/></a>
+                    <h2 class="section-heading text-uppercase spaced" id="a n n o u n c e m e n t s">Announcements
+                        <a href="https://cs61a.org/" target="_blank"><img class="lambda" src="assets/img/lambda.ico" alt="lambda"/></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="carousel" id="myCarousel" data-wrap="false">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="announcement">
+                            <div class="text-muted">Monday, August 28</div>
+                            <ul>
+                                <li class="text-muted">🥳 Welcome to CS 61A! 🥳</li>
+                                <li class="text-muted">First discussion was Thursday, 1/20/23</li>
+                                <li class="text-muted">First lab is Tuesday, 1/24/23</li>
+                                <li class="text-muted">I'm happy to chat with you about anything (non-assignment related)! Sign up for a slot using the "<a href="https://go.cs61a.org/laryn-advising" target="_blank">meetings</a>"" tab above
+                                    <ul>
+                                        <li class="text-muted">Feel free to reach out via email if the timing doesn't work for you (<a href="mailto:larynqi@berkeley.edu">larynqi@berkeley.edu</a>)</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">You can find all section slides on this website below (or at this link: <a href="https://go.cs61a.org/laryn-slides" target="_blank">go.cs61a.org/laryn-slides</a>)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="carousel-item active">
+                        <div class="announcement">
+                            <div class="text-muted">Thursday, March 9</div>
+                            <ul>
+                                <li class="text-muted">Lab/Discussion Drops
+                                    <ul>
+                                        <li>Per the syllabus, you must attend 10 (required) labs and 10 discussions</li>
+                                        <li>Students are given one point of lab credit just for submitting lab00 since there was no lab section the first week of classes</li>
+                                        <li>There are 12 required labs (lab03, lab10 optional) – you must receive credit for at least 10 of these.</li>
+                                        <li>There are 12 required discussions (disc00 optional, disc10 skipped due to MT2) – you must receive credit for at least 10 of these.</li>
+                                        <li>In other words, you effectively have 2 lab drops and 2 discussion drops for the semester.</li>
+                                    </ul>
+                                </li>
+                                <li class="text-muted">Extension Request Form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRc-NpXm37GYKobjjFSjOdDXLXltgll4rIXj4kU2HTSogUcA/viewform" target="_blank">link</a>
+                                    <ul>
+                                        <li>If you are having trouble accessing the form, double-check you are signed in with your Berkeley email and try with another web browser.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </a>
+            </div>
+        </section>
+
+        <!-- Labs & Discussions -->
+        <section class="page-section bg-light" id="slides">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Slides</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <ul>
+                            </li>
+                            <b><u>Labs</u></b>
+                            <li> 00: Getting Started
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab00/" target="_blank">Lab</a></li>
+                                </ul>
+                            </li>
+                            <li> 01: Functions Control
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab01/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab01/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 02: Higher-Order Functions, Lambda Expressions
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab02/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab02/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 03: Midterm Review (Optional)
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab03/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab03/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 04: Recursion, Python Lists
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab04/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab04/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 05: Trees, Data Abstraction
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab05/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab05/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 06: Iterators, Mutability
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab06/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab06/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 07: Object-Oriented Programming
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab07/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab07/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 08: Linked Lists
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab08/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab08/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 09: Mutable Trees
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab09/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab09/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 10: Scheme
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab10/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab10/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 11: Interpreters
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab11/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab11/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 12: Programs as Data
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab12/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab12/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li> 13: SQL
+                                <ul>
+                                    <li><a href="https://cs61a.org/lab/lab13/" target="_blank">Lab</a></li>
+                                    <li><a href="https://cs61a.org/lab/sol-lab13/" target="_blank">Solutions</a></li>
+                                </ul>
+                            </li>
+                        <ul>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <b><u>Discussion</u></b>
+                            <li> 00: Getting Started
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc00/" target="_blank">Web</a></li>
+                                    <li><a href="assets/fa23/disc00-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1XdxvFdSVdBsQfz66JKJhJ0DWzf3q9YB3998JIxtAj7o/edit?usp=sharing" target="_blank">Slides</a></li>
+                                </ul>
+                            </li>
+                            <li> 01: Control, Environment Diagrams
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc01/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 02: Environment Diagrams, Higher-Order Functions
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc02/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 03: Recursion
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc03/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 04: Tree Recursion
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc04/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 05: Mutability, Data Abstraction, Trees
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc05/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 06: Iterators, Generators
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc06/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 07: OOP, String Representation
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc07/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                                </ul>
+                            </li>
+                            <li> 08: Linked Lists, Efficiency
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc08/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 09: Midterm Review
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc09/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 10: Scheme, Scheme Lists
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc10/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 11: Interpreters, More Scheme
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc11/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 12: Macros
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc12/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                            <li> 13: SQL
+                                <ul>
+                                    <li><a href="https://cs61a.org/disc/disc13/" target="_blank">Web</a></li>
+                                    <!-- <li><a href="assets/fa23/disc01-sol.pdf" target="_blank">Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1wmWzuJfwv6Up39azRKKehJUjDlEJKeUo-Tn1s09pRS0/edit?usp=sharing" target="_blank">Slides</a></li> -->
+                                </ul>
+                            </li>
+                        <ul>
+                    </div>
+            </div>
+        </section>
+       
+        <!-- Resources-->
+        <section class="page-section" id="resources">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Resources</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <b><u>Learn/Practice</u></b>
+                            <li><a href="http://pythontutor.com/composingprograms.html#mode=edit" target="_blank">Python Tutor</a></li>
+                            <li><a href="https://code.cs61a.org/" target="_blank">CS61A Interpreters</a></li>
+                            <li><a href="assets/tree-abstraction.py" target="_blank">Tree ADT</a></li>
+                            <li><a href="assets/tree.py" target="_blank">Tree Class</a></li>
+                            <li><a href="assets/link.py" target="_blank">Link Class</a></li>
+                        <ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <b><u>Exam Prep</u></b>
+                            <li><a href="https://docs.google.com/spreadsheets/d/1KcTObXmtytRVV6m3bFa39r28o0ODMjM92qRkiED0qX4/edit?usp=sharing" target="_blank">Past Exam Averages</a></li>
+                            <li><a href="https://gist.github.com/LarynQi/31089f9c4e9ae77df6edc421910703f5" target="_blank">Exam Tips</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/playlists" target="_blank">Exam Walk-throughs</a></li>
+                            <li><a href="https://docs.google.com/presentation/d/1wB4ZtYsjgCfoQf-ZBp1jDPI-vdQ_8625GuLtLF-2h9o/edit?usp=sharing" target="_blank">MT2 Review Slides [SP20]</a></li>
+                            <li>CSM MT2 Review [SP20]
+                                <ul>
+                                    <li><a href="https://docs.google.com/presentation/d/1OxvcZMaor_5OtMtD6gpbOz-Rgv7Q0qlMU69bhUUqR_M/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://youtu.be/r0QxOF6geYc?t=1689" target="_blank">Recording</a></li>
+                                </ul>
+                            </li>
+                            <li>CSM Final Review [SP20]
+                                <ul>
+                                    <li><a href="https://docs.google.com/presentation/d/1jZCs6Qiq4TGqBM99o9GsB3X3HjwYhg_ou9UKGFQWgXY/edit?usp=sharing" target="_blank">Slides</a></li>
+                                    <li><a href="https://berkeley.zoom.us/rec/share/380rN7brqE9OX9LkwljPUb4ZLIvDeaa8gClP_vIJmRxMUcYlmjQi6P1Sth5ohUZY" target="_blank">Recording</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLx38hZJ5RLZfYDWV_wkOyG5o_C6LLvWfX" target="_blank">Topical Review Sessions (Final) [SP20]</a>
+                                <ul>
+                                    <li><a href="https://drive.google.com/open?id=1HVkbS4euZMYgzfL4kaypCI9_6Dn7YLKQ" target="_blank">OOP Slides + Worksheet + Solutions</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1lJsNcF_8UG6GtQrxuSx7DVVpD8acDD_8h3BopifEbd4/edit?usp=sharing" target="_blank">Linked Lists Slides</a></li>
+                                    <li><a href="https://drive.google.com/file/d/1N8ubbi6KKDXdA8xDHGG774mCRTjUbHny/view" target="_blank">Trees Slides</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/1vZKNxP7mpfeGlHhcGZ5tUuLnUGsz6XTn" target="_blank">Trees Code + Solutions</a></li>
+                                    <li><a href="https://drive.google.com/drive/folders/1sc1jatJmk247-yC5Q_ZujpRc7EORZ3en" target="_blank">Scheme Slides + File</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1FYkIW8Uf0j8KXZgDpmvEvIo1mBY323kxdedBXF51dBQ/edit#slide=id.p" target="_blank">Mutable Functions & Objects Slides</a></li>
+                                    <li><a href="https://docs.google.com/presentation/d/1gLVLUpgt2oCAJctv5bAAreIlqo_uMefpbQRoAfJiw1k/edit#slide=id.g5f707e0c67_0_0" target="_blank">SQL Slides</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://docs.google.com/presentation/d/14mCUXn6av4ftLgr-3Z-pIpky16Oz1Lr0MxE5nKja_oA/" target="_blank">HKN Final Review [SP20] Slides</a></li>
+                            <li><a href="https://youtu.be/z18MDxsot94" target="_blank">OOP Topical Review Session [SU20]</a>
+                                <ul>
+                                    <li><a href="assets/code/oop.py" download="oop.py">Code</a></li>
+                                    <li><a href="assets/code/oop-sol.py" download="oop-sol.py">Solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://cs61a.org/resources" target="_blank">More</a></li>
+                        <ul>
+                    </div>
+                     <div class="col-lg-3">
+                        <ul>
+                            <b><u>Other</u></b>
+                            
+                            <li>Brian Harvey on <a href="https://people.eecs.berkeley.edu/~bh/sicp.html" target="_blank"><i>Why SICP matters</i></a></li>
+                            <li><a href="https://kevinl.info/cs61a/" target="_blank">Learning Computer Science</a></li>
+                            <li><a href="assets/CS 61A Final Studying Tips.pdf" target="_blank">Studying FAQ</a></li>
+                            <li><a href="https://cs61a.org/articles/studying" target="_blank">Studying Guide</a></li>
+                            <li><a href="https://docs.google.com/document/d/1ryxWkuXf3HkahsDp426Q-R6q2Iqfgcz-oDHF8OwuJak/edit?usp=sharing" target="_blank">Study Tips [SP20]</a></li>
+                        <ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left"></div>
+                    <div class="col-lg-4 my-3 my-lg-0">© 2021 Laryn Qi
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Particles from Vincent Garreau -->
+        <script src="js/particles.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/teaching.js"></script>
+        <script src="js/announcements.js"></script>
+        <script src="js/links.js"></script>
+
+        <!-- <a href="assets/tree-abstraction.py" download="tree-abstraction.py"></a> -->
+    </body>
+</html>
