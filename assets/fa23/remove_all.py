@@ -33,6 +33,18 @@ def remove_all(link, value):
     else:
         remove_all(link.rest, value)
 
+    """
+    # ORIGINAL INCORRECT SOLUTION
+
+    if link is Link.empty:
+        return
+    elif link.rest is Link.empty:
+        return
+    elif link.rest.first == value:
+        link.rest = link.rest.rest
+    remove_all(link.rest, value)
+    """
+
 
 class Link:
     """A linked list."""
